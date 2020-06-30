@@ -95,7 +95,7 @@ public class Atm {
 		json = account.getZango(json);
 		
 		// 입금 금액이 0보다 클때 입금 진행
-		if((Integer)json.get("amount") >= 0 && (Integer)json.get("zango") >= 0 && (Integer)json.get("zango") >= (Integer)json.get("amount")) {
+		if((Integer)json.get("amount") >= 0 && (Integer)json.get("zango") > 0 && (Integer)json.get("zango") >= (Integer)json.get("amount")) {
 			sqlQeury = "INSERT INTO KAKAOBANK.WITHDRAW (MEMBERNO, ACCOUNTNO, AMOUNT, DEALTIME) "
 					 + "VALUES (?, ?, ?, SYSDATE())";
 			
@@ -170,7 +170,7 @@ public class Atm {
 		json = account.getZango(json);
 		
 		// 입금 금액이 0보다 클때 입금 진행
-		if((Integer)json.get("amount") >= 0 && (Integer)json.get("zango") >= 0 && (Integer)json.get("zango") >= (Integer)json.get("amount")) {
+		if((Integer)json.get("amount") >= 0 && (Integer)json.get("zango") > 0 && (Integer)json.get("zango") >= (Integer)json.get("amount")) {
 			sqlQeury = "INSERT INTO KAKAOBANK.TRANSFER (MEMBERNO, ACCOUNTNO, TOBANK, TOACCOUNTNO, TOMEMBERNAME, AMOUNT, DEALTIME) "
 					 + "VALUES (?, ?, ?, ?, ?, ?, SYSDATE())";
 			
