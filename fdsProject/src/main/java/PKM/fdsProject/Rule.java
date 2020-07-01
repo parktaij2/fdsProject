@@ -21,7 +21,7 @@ public class Rule {
 	}
 	
 	@SuppressWarnings("unchecked")
-	public JSONObject ruleExcute(JSONObject json) {
+	public JSONObject detections(JSONObject json) {
 		json.put("ruleNo", "0");
 		json.put("ruleMemberNo", 0);
 		

@@ -53,7 +53,7 @@ public class Manager {
 				
 				// 룰 실행
 				stopwatch(1);
-				json = rule.ruleExcute(json);
+				json = rule.detections(json);
 				stopwatch(0);
 				System.out.println("룰 트랜잭션 경과 시간 : " + finalTime + "ms");
 				
@@ -70,7 +70,7 @@ public class Manager {
 					
 					// 룰 실행
 					stopwatch(1);
-					json = rule.ruleExcute(json);
+					json = rule.detections(json);
 					stopwatch(0);
 					System.out.println("룰 트랜잭션 경과 시간 : " + finalTime + "ms");
 					
@@ -89,7 +89,7 @@ public class Manager {
 					
 					// 룰 실행
 					stopwatch(1);
-					json = rule.ruleExcute(json);
+					json = rule.detections(json);
 					stopwatch(0);
 					System.out.println("룰 트랜잭션 경과 시간 : " + finalTime + "ms");
 					
@@ -108,7 +108,7 @@ public class Manager {
 					
 					// 룰 실행
 					stopwatch(1);
-					json = rule.ruleExcute(json);
+					json = rule.detections(json);
 					stopwatch(0);
 					System.out.println("룰 트랜잭션 경과 시간 : " + finalTime + "ms");
 					
@@ -127,7 +127,7 @@ public class Manager {
 					
 					// 룰 실행
 					stopwatch(1);
-					json = rule.ruleExcute(json);
+					json = rule.detections(json);
 					stopwatch(0);
 					System.out.println("룰 트랜잭션 경과 시간 : " + finalTime + "ms");
 					
